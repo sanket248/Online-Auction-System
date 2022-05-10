@@ -1,0 +1,72 @@
+body {
+    background-repeat: no-repeat;
+    /* background-size: 1360px 700px; */
+    background-size: cover;
+    background-attachment: fixed;
+    /* backdrop-filter: blur(3px);   */
+}
+
+.form-popup {
+    position:absolute;
+    border: 0px rounded #8d7b7b;
+    border-radius: 10px;
+    /* box-shadow: 10px 10px 10px rgb(116, 92, 92); */
+    background-color: rgb(5, 5, 5);
+    opacity: 0.8;
+    left: 34%;
+    top: 15%;
+    margin-left: 3%;
+}
+
+.form-container {
+    max-width: 400px;
+    padding: 10px;
+    color: rgb(156, 156, 156);
+    font-size: x-large;
+    position: relative;
+    background: transparent;
+    opacity: 1;
+    margin-bottom: auto;
+    /* font-family: Colonna MT; */
+    
+}
+  
+.form-container input[type=text],
+.form-container input[type=password],
+.form-container input[type=number],
+.form-container input[type=email] {
+    width: 100%;
+    font-size: medium;
+    /* font-weight: bold; */
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: rgb(156, 156, 156);
+}
+  
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus,
+.form-container input[type=number]:focus,
+.form-container input[type=email]:focus {
+    background-color: rgb(255, 254, 254);
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #580707;
+    font-size: medium;
+    color: rgb(255, 255, 255);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+.form-container .btn:hover{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+

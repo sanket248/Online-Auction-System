@@ -1,0 +1,52 @@
+.content {
+    margin: auto;
+    text-align: center;
+    width: 20%;
+    transform: translateY(5%);
+    position: fixed;
+    margin-top: auto;
+    margin-left : 40%;
+    z-index: 1000;
+  }
+  
+  label, .toggle {
+    height: 2.8rem;
+    border-radius: 100px;
+  }
+  label {
+    width: 100%;
+    background-color: rgb(43,36,36);
+    border-radius: 100px;
+    position: relative;
+    margin: 1.8rem 0 4rem 0; 
+    cursor: pointer;
+  }
+  .toggle {
+    position: absolute;
+    width: 50%;
+    background-color: rgb(124, 110, 110);
+    box-shadow: 0 2px 15px rgba(0,0,0,.15);
+    transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .names {
+    font-size: 100%;
+    font-weight: bolder;
+    width: 65%;
+    margin-left: 17.5%;
+    margin-top: .5%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+  }
+  .text {
+    text-align: center;
+    margin-top:7px; 
+    color: white;
+  }
+  [type="checkbox"] {
+    display: none;
+  }
+  [type="checkbox"]:checked + .content .toggle{
+    transform: translateX(100%);
+  }
